@@ -42,7 +42,7 @@ void	ft_order_3(t_list **stack, int size)
 			if (ft_n_pos(stack, 1) > ft_n_pos(stack, 2))
 			{
 				if (ft_n_pos(stack, 1) > ft_n_pos(stack, 3)
-					&& ft_n_pos(stack, 2) < ft_n_pos(stack, 3) )
+					&& ft_n_pos(stack, 2) < ft_n_pos(stack, 3))
 					ft_rev_rot(stack, 'a', 1);
 				if (ft_n_pos(stack, 1) > ft_n_pos(stack, 2))
 					ft_swap(stack, 'a', 1);
@@ -79,7 +79,6 @@ void	ft_order_5(t_list **stack_a, t_list **stack_b, int lstsize)
 	while (lstsize-- > 3)
 		ft_push(stack_a, stack_b, 'b');
 	ft_order_3(stack_a, ft_lstsize(*stack_a));
-	//ft_print_lst(stack_a);
 	while (ft_lstsize(*stack_b))
 	{
 		n = ft_find_ins(stack_a, stack_b);
@@ -94,6 +93,5 @@ void	ft_order_5(t_list **stack_a, t_list **stack_b, int lstsize)
 		else
 			ft_insert_back(stack_a, stack_b, n);
 		lstsize++;
-		//ft_print_lst(stack_a);
 	}
 }
