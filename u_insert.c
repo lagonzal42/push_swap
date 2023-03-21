@@ -27,6 +27,11 @@ void	ft_insert_back(t_list **stack_a, t_list **stack_b, int n)
 		n++;
 	}
 	ft_push(stack_b, stack_a, 'a');
+	if (*stack_b && ft_n_pos(stack_b, 1) == ft_n_pos(stack_a, 1) - 1)
+	{
+		ft_push(stack_b, stack_a, 'a');
+		r++;
+	}
 	while (r--)
 		ft_rot(stack_a, 'a', 1);
 }

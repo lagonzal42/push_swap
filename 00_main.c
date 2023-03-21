@@ -6,7 +6,7 @@
 /*   By: lagonzal <lagonzal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 13:30:49 by lagonzal          #+#    #+#             */
-/*   Updated: 2023/03/21 17:07:19 by lagonzal         ###   ########.fr       */
+/*   Updated: 2023/03/21 20:02:37 by lagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	main(int argc, char **argl)
 		else
 		{
 			ft_top_order(stack);
+			//ft_print_lst(stack);
 			ft_freelst(stack);
 		}
 	}

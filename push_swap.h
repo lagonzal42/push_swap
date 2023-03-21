@@ -6,7 +6,7 @@
 /*   By: lagonzal <lagonzal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 13:19:57 by lagonzal          #+#    #+#             */
-/*   Updated: 2023/03/21 19:34:47 by lagonzal         ###   ########.fr       */
+/*   Updated: 2023/03/21 21:06:48 by lagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ void	ft_rev_rot_both(t_list **stack1, t_list **stack2);
 t_list	*ft_check_input(int argc, char **argl);
 int		ft_num_form(char *num);
 t_list	**ft_index(t_list **stack);
-int	ft_numberlen(char *num);
+int		ft_numberlen(char *num);
+int		ft_n_pos(t_list **stack, int n);
 
 //Order
 
